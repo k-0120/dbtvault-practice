@@ -4,7 +4,7 @@ dv_project:
     dev:
       type: bigquery
       method: service-account
-      project: {{ GCP のプロジェクト名 }}
+      project: sqlife-work
       dataset: dv
       location: us-central1
       threads: 3
