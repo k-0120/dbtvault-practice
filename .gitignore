@@ -1,7 +1,5 @@
 dbtvault_keyfile.json
-Dockerfile
-docker-compose.yml
-dv_project
+dv_project/logs
 logs
 profiles.yml
 

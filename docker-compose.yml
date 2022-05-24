@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  dbt:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - $PWD:/usr/app/dbt
+    container_name: dbt_container
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    container_name: postgres
+
+volumes:
+  db-data:

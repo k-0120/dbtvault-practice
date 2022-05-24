@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sample_dataset
+    tables:
+      - name: categories
+      - name: orders
+      - name: products
+      - name: user_categories
+      - name: users
