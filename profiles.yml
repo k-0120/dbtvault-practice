@@ -1,0 +1,11 @@
+dv_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: {{ GCP のプロジェクト名 }}
+      dataset: dv
+      location: us-central1
+      threads: 3
+      keyfile: /usr/app/dbt/dbtvault_keyfile.json
